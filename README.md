@@ -1,11 +1,5 @@
 # Project Pro Running
 
-> Historical and current Australian Athletics Confederation (AAC) results and analysis.
-
----
-
-## Overview
-
 *Project Pro Running* has been created to provide insights from race meetings across the Victorian Athletic League (VAL), South Australian Athletic League (SAAL), and other organisations governed by the Australian Athletics Confederation (AAC).
 
 ---
