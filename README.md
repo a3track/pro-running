@@ -15,14 +15,13 @@ Including:
 
 ---
 
-## Coverage
+## Season Coverage
 
-| League | Current | Future |
-|----------|----------|----------|
-| VAL | All seasons from 2024-25| All seasons from 2004-05 |
-| NSWAL | All seasons from 2024-25 | All seasons from 2022-23 |
-| SAAL | All seasons from 2010-11 | TBC |
-| TAL | None | TBC |
+| League | Latest | Earliest | Missing |
+|----------|----------|----------|----------|
+| VAL | 2026-27 | 2004-05 | 2005-06 & 2010-11 |
+| SAAL | 2026-27 | 2010-11 | TBC |
+| NSWAL | 2026-27 | 2022-23 | TBC |
 
 Additional leagues and seasons will be added over time.
 
@@ -32,7 +31,8 @@ Additional leagues and seasons will be added over time.
 
 - Expand historical coverage
 - Race performance analysis
-- Athlete rankings
+- Athlete progress & rankings
+- Additional insights
 
 ---
 
