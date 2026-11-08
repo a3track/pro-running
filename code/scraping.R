@@ -1,4 +1,3 @@
-
 # Libraries
 library(rvest)
 
@@ -74,6 +73,10 @@ get_events <- function(league, meet_id) {
 
     links <- html_nodes(read_html(url), "a[href*='race=']")
 
+    if (length(links) == 0) {
+      return(NULL)
+    }
+
     desc <- html_text(links, trim = TRUE)
 
     types <- sub(
@@ -127,7 +130,17 @@ get_times <- function(league, meet_id, event_id) {
           "&race=", event_id
         )
 
-        page <- read_html(url)
+        page <- tryCatch(
+          read_html(url),
+          error = function(e) {
+            message("Failed: ", url)
+            NULL
+          }
+        )
+
+        if (is.null(page)) {
+          return(NULL)
+        }
 
         tables <- html_nodes(page, "table")
 
@@ -282,6 +295,13 @@ tidy_results <- function(results) {
   results$Meeting <- toupper(results$Meeting)
   results$Type <- toupper(results$Type)
   results$TypeDesc <- toupper(results$TypeDesc)
+
+  results$Wind <- ifelse(
+    (results$Event <= 200) &
+      (results$Wind == 0 | is.na(results$Wind)),
+    round((results$AdjTime - results$Time) / 0.05, 1),
+    results$Wind
+  )
 
   rownames(results) <- NULL
 
