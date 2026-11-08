@@ -25,10 +25,10 @@ Including:
 
 | League | Current | Future |
 |----------|----------|----------|
-| VAL | 2024-25 season onwards| All seasons from 2004-05 |
-| SAAL | 2026-27 season only | All seasons from 2010-11 |
-| NSWAL | 2024-25 season onwards | TBC |
-| TAL |  | TBC |
+| VAL | All seasons from 2024-25| All seasons from 2004-05 |
+| NSWAL | All seasons from 2024-25 | All seasons from 2022-23 |
+| SAAL | All seasons from 2010-11 | TBC |
+| TAL | None | TBC |
 
 Additional leagues and seasons will be added over time.
 
