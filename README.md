@@ -30,7 +30,8 @@ Additional leagues and seasons will be added over time.
 ## Future Development
 
 - Expand historical coverage
-- Race performance analysis
+- Further cleaning of results
+- Race analysis & predictions
 - Athlete progress & rankings
 - Additional insights
 
